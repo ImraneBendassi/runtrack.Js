@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job02</title>
+</head>
+<body>
+
+<button id="button" onclick="showhide()">Toggle Article</button>
+
+<article id="article" style="display: none;">
+    L'important n'est pas la chute, mais l'atterrissage.
+</article>
+
+<script>
+function showhide() {
+    var article = document.getElementById("article");
+    if (article.style.display === "none") {
+        article.style.display = "block";
+    } else {
+        article.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
