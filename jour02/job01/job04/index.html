@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job04</title>
+</head>
+<body>
+
+<textarea id="keylogger" rows="4" cols="50"></textarea>
+
+<script>
+document.addEventListener("keydown", function(event) {
+    var textarea = document.getElementById("keylogger");
+    var keyPressed = event.key.toLowerCase();
+    
+    if (event.target !== textarea) {
+  
+        if (/^[a-z]$/.test(keyPressed)) {
+            textarea.value += keyPressed;
+        }
+    } else {
+
+        if (/^[a-z]$/.test(keyPressed)) {
+            textarea.value += keyPressed + keyPressed; 
+        }
+    }
+});
+</script>
+
+</body>
+</html>
