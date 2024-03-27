@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job06</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="default-content" style="display: none;">
+    <h1>Welcome to My Page</h1>
+    <p>This is the default content of the page.</p>
+</div>
+
+
+<div id="content">
+   
+</div>
+
+<footer id="footer"></footer>
+
+<script>
+
+var konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+var konamiCodePosition = 0;
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === konamiCode[konamiCodePosition]) {
+        konamiCodePosition++;
+        if (konamiCodePosition === konamiCode.length) {
+        
+            stylizePage();
+            konamiCodePosition = 0; 
+        }
+    } else {
+        konamiCodePosition = 0;
+    }
+});
+
+
+function stylizePage() {
+    document.getElementById('content').innerHTML = '<h1 style="color: #ff00ff;">La Plateforme_</h1><p style="color: #ff00ff;">This is La Plateforme_ styling!</p>';
+    document.body.style.backgroundColor = '#000';
+    document.getElementById('footer').style.backgroundColor = '#ff00ff';
+}
+</script>
+
+</body>
+</html>
