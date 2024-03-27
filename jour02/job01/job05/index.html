@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footer with Scrolling Color Change</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<footer id="footer"></footer>
+
+<script>
+window.addEventListener('scroll', function() {
+    var footer = document.getElementById('footer');
+    var maxHeight = document.body.scrollHeight - window.innerHeight;
+    var percentageScrolled = (window.scrollY / maxHeight) * 100;
+    
+    
+    var color = interpolateColor('#ccc', '#f00', percentageScrolled / 100);
+    
+    footer.style.backgroundColor = color;
+});
+
+
+function interpolateColor(color1, color2, factor) {
+    if (factor === 0) return color1;
+    if (factor === 1) return color2;
+    
+    var result = color1.split(",");
+    var color2Arr = color2.split(",");
+    
+    for (var i = 0; i < result.length; i++) {
+        result[i] = Math.round(parseInt(result[i]) + factor * (parseInt(color2Arr[i]) - parseInt(result[i])));
+    }
+    
+    return "rgb(" + result.join(",") + ")";
+}
+</script>
+
+</body>
+</html>
