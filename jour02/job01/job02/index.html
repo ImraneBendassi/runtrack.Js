@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Job02</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arc-en-ciel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-
-<button id="button" onclick="showhide()">Toggle Article</button>
-
-<article id="article" style="display: none;">
-    L'important n'est pas la chute, mais l'atterrissage.
-</article>
-
-<script>
-function showhide() {
-    var article = document.getElementById("article");
-    if (article.style.display === "none") {
-        article.style.display = "block";
-    } else {
-        article.style.display = "none";
-    }
-}
-</script>
-
+  <div id="container">
+    <button id="shuffleButton">Mélanger</button>
+    <button id="checkButton">Vérifier</button>
+    <div id="imageContainer">
+      <img src="C:\Users\b13im\OneDrive\Desktop\arc img\arc1.png" id="image1" class="draggable">
+      <img src="C:\Users\b13im\OneDrive\Desktop\arc img\arc2.png" id="image2" class="draggable">
+      <img src="C:\Users\b13im\OneDrive\Desktop\arc img\arc3.png" id="image3" class="draggable">
+      <img src="C:\Users\b13im\OneDrive\Desktop\arc img\arc4.png" id="image4" class="draggable">
+      <img src="C:\Users\b13im\OneDrive\Desktop\arc img\arc5.png" id="image5" class="draggable">
+      <img src="C:\Users\b13im\OneDrive\Desktop\arc img\arc6.png" id="image6" class="draggable">
+    </div>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

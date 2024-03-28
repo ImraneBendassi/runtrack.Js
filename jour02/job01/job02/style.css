@@ -1,0 +1,19 @@
+#container {
+    text-align: center;
+  }
+  
+  #imageContainer {
+    margin-top: 20px;
+  }
+  
+  .draggable {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  #message {
+    margin-top: 20px;
+  }
+  
