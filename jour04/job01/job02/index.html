@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job02</title>
+</head>
+<body>
+  <h1>Récupération de valeur JSON</h1>
+  <label for="jsonString">Chaîne JSON :</label>
+  <br>
+  <textarea id="jsonString" rows="4" cols="50">{
+    "name": "La Plateforme_",
+    "address": "8 rue d'hozier",
+    "city": "Marseille",
+    "nb_staff": "11",
+    "creation": "2019"
+  }</textarea>
+  <br>
+  <label for="key">Clé :</label>
+  <input type="text" id="key">
+  <br>
+  <button onclick="afficherValeur()">Afficher la valeur</button>
+  <br>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
