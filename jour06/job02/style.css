@@ -1,0 +1,13 @@
+.gray-box {
+    background-color: #bfbfbf; /* Couleur grise */
+    padding: 20px; /* Ajoutez un remplissage pour l'apparence */
+}
+
+.card-body{
+    float: left;
+}
+
+body {
+    background-color: #f0f0f0; /* Gris clair */
+}
+
