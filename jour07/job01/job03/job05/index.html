@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage Explorer</title>
+    <!-- Materialize CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS for logo */
+        .brand-logo {
+            font-size: 1.5rem;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        /* Custom CSS for cards */
+        .card-image img {
+            height: 200px;
+            object-fit: cover;
+        }
+        @media only screen and (max-width: 600px) {
+            .card-image img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="blue darken-3">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><i class="fas fa-plane"></i> Voyage Explorer</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Body -->
+    <div class="container">
+        <h4 class="center-align">Destinations Populaires</h4>
+        <div class="row">
+            <!-- Small Card -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\b13im\Downloads\image (12).png" alt="Destination">
+                        <span class="card-title">Marrakech, Maroc</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Découvrez l'air urbain et rougeur.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Medium Card -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\b13im\Downloads\Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.png" alt="Destination">
+                        <span class="card-title">Los Angeles, USA</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Profiter des plages, de la culture, et du glamour.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Large Card -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\b13im\Downloads\bbf8aa0b-city-9457-164d6a9147e.png" alt="Destination">
+                        <span class="card-title">Abu Dhabi, EAU</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Profitez du soleil, des plages du futurisme, et des richesses matérielles.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
