@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil job02</title>
+    <!-- Materialize CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header class="blue darken-3 white-text center-align">
+    <!-- Ajout de classes Materialize pour la couleur et l'alignement -->
+    <nav>
+        <ul>
+            <!-- Liens de navigation -->
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Section de création de compte -->
+<section>
+    <!-- Titre de la section -->
+    <h2>Création de compte</h2>
+    <!-- Formulaire d'inscription -->
+    <form action="index.html" method="post">
+        <!-- Champ de saisie pour la civilité -->
+        <fieldset>
+            <legend>Civilité</legend>
+            <p>
+                <label>
+                    <input type="radio" id="monsieur" name="civilite" value="monsieur" />
+                    <span><i class="material-icons">person</i>Monsieur</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" id="madame" name="civilite" value="madame" />
+                    <span><i class="material-icons">person</i>Madame</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" id="autre" name="civilite" value="autre" />
+                    <span><i class="material-icons">person</i>Autre</span>
+                </label>
+            </p>
+        </fieldset>
+
+        <!-- Informations personnelles -->
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <div class="input-field">
+                <input id="prenom" type="text" class="validate">
+                <label for="prenom">Prénom :</label>
+            </div>
+            <div class="input-field">
+                <input id="nom" type="text" class="validate">
+                <label for="nom">Nom :</label>
+            </div>
+            <div class="input-field">
+                <input id="adresse" type="text" class="validate">
+                <label for="adresse">Adresse :</label>
+            </div>
+        </fieldset>
+
+        <!-- Champ de contact -->
+        <fieldset>
+            <legend>Contact</legend>
+            <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email :</label>
+            </div>
+            <div class="input-field">
+                <input id="password" type="password" class="validate">
+                <label for="password">Mot de passe :</label>
+            </div>
+            <div class="input-field">
+                <input id="confirm_password" type="password" class="validate">
+                <label for="confirm_password">Confirmer le mot de passe :</label>
+            </div>
+        </fieldset>
+
+        <!-- Passions -->
+        <fieldset>
+            <legend>Passions</legend>
+            <p>
+                <label>
+                    <input type="checkbox" id="informatique" name="passions" value="informatique" />
+                    <span><i class="material-icons">computer</i>Informatique</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="voyages" name="passions" value="voyages" />
+                    <span><i class="material-icons">time_to_leave</i>Voyages</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="sport" name="passions" value="sport" />
+                    <span><i class="material-icons">favorite</i>Sport</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="lecture" name="passions" value="lecture" />
+                    <span><i class="material-icons">book</i>Lecture</span>
+                </label>
+            </p>
+        </fieldset>
+
+        <!-- Bouton de soumission du formulaire -->
+        <button type="submit" class="btn waves-effect waves-light">Valider le formulaire</button>
+    </form>
+</section>
+
+<!-- Pied de page -->
+<footer class="page-footer blue darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Mon Site</h5>
+                <p class="grey-text text-lighten-4">Vous trouverez ici des informations sur mon site.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Liens</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="index.html">Accueil</a></li>
+                    <li><a class="grey-text text-lighten-3" href="index.html">Inscription</a></li>
+                    <li><a class="grey-text text-lighten-3" href="index.html">Connexion</a></li>
+                    <li><a class="grey-text text-lighten-3" href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <p class="grey-text text-lighten-4 right">© 2023 Mon Site</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Materialize JS CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
