@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page d'accueil</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Création de compte</h2>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>Civilité</legend>
+                    <input type="radio" id="monsieur" name="civilite" value="monsieur">
+                    <label for="monsieur">Monsieur</label><br>
+                    <input type="radio" id="madame" name="civilite" value="madame">
+                    <label for="madame">Madame</label><br>
+                    <input type="radio" id="autre" name="civilite" value="autre">
+                    <label for="autre">Autre</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom"><br>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom"><br>
+                    <label for="adresse">Adresse:</Address></label>
+                    <input type="text" id="adresse" name="adresse"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password"><br>
+                    <label for="confirm_password">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirm_password" name="confirm_password"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Passions</legend>
+                    <input type="checkbox" id="informatique" name="passions" value="informatique">
+                    <label for="informatique">Informatique</label><br>
+                    <input type="checkbox" id="voyages" name="passions" value="voyages">
+                    <label for="voyages">Voyages</label><br>
+                    <input type="checkbox" id="sport" name="passions" value="sport">
+                    <label for="sport">Sport</label><br>
+                    <input type="checkbox" id="lecture" name="passions" value="lecture">
+                    <label for="lecture">Lecture</label><br>
+                </fieldset>
+
+                <button type="submit">Valider le formulaire</button>
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

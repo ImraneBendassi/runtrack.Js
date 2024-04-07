@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-500 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Formulaire création de compte </h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">Accueil</a></li>
+                <li><a href="#" class="hover:underline">Inscription</a></li>
+                <li><a href="#" class="hover:underline">Connexion</a></li>
+                <li><a href="#" class="hover:underline">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section : Formulaire de création de compte -->
+    <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-4">Création de compte</h2>
+        <form action="#" method="post" class="space-y-4">
+            <!-- Civilité -->
+            <div>
+                <label class="block mb-2">Civilité :</label>
+                <div class="flex space-x-4">
+                    <label for="monsieur" class="flex items-center">
+                        <input type="radio" id="monsieur" name="civilite" value="monsieur">
+                        <span class="ml-2">Monsieur</span>
+                    </label>
+                    <label for="madame" class="flex items-center">
+                        <input type="radio" id="madame" name="civilite" value="madame">
+                        <span class="ml-2">Madame</span>
+                    </label>
+                    <label for="autre" class="flex items-center">
+                        <input type="radio" id="autre" name="civilite" value="autre">
+                        <span class="ml-2">Autre</span>
+                    </label>
+                </div>
+            </div>
+            <!-- Informations personnelles -->
+            <div>
+                <label for="prenom" class="block mb-2">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+                <label for="nom" class="block mb-2">Nom :</label>
+                <input type="text" id="nom" name="nom" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+                <label for="adresse" class="block mb-2">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <!-- Contact -->
+            <div>
+                <label for="email" class="block mb-2">Email :</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+                <label for="password" class="block mb-2">Mot de passe :</label>
+                <input type="password" id="password" name="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+                <label for="confirm_password" class="block mb-2">Confirmer le mot de passe :</label>
+                <input type="password" id="confirm_password" name="confirm_password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <!-- Passions -->
+            <div>
+                <label class="block mb-2">Passions :</label>
+                <div class="space-y-2">
+                    <label for="informatique" class="flex items-center">
+                        <input type="checkbox" id="informatique" name="passions" value="informatique">
+                        <span class="ml-2">Informatique</span>
+                    </label>
+                    <label for="voyages" class="flex items-center">
+                        <input type="checkbox" id="voyages" name="passions" value="voyages">
+                        <span class="ml-2">Voyages</span>
+                    </label>
+                    <label for="sport" class="flex items-center">
+                        <input type="checkbox" id="sport" name="passions" value="sport">
+                        <span class="ml-2">Sport</span>
+                    </label>
+                    <label for="lecture" class="flex items-center">
+                        <input type="checkbox" id="lecture" name="passions" value="lecture">
+                        <span class="ml-2">Lecture</span>
+                    </label>
+                </div>
+            </div>
+            <!-- Bouton de soumission -->
+            <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Valider le formulaire</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4">
+        <nav class="container mx-auto flex justify-center">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                <li><a href="index.html" class="hover:underline">Inscription</a></li>
+                <li><a href="index.html" class="hover:underline">Connexion</a></li>
+                <li><a href="index.html" class="hover:underline">Rechercher</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
