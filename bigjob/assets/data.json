@@ -1,0 +1,8 @@
+{
+    "users": [
+      { "username": "Céline", "role": "moderateur" },
+      { "username": "Imrane", "role": "administrateur" },
+      { "username": "Pierre", "role": "moderateur" }
+    ]
+  }
+  

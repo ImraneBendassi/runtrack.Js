@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plateforme_</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">La Plateforme_</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Lien de connexion -->
+        <li class="nav-item">
+          <a class="nav-link" href="connexion.html">Se connecter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenu de la page -->
+<div class="container mt-5">
+  <!-- Onglets pour l'inscription, la demande d'autorisation et le back office -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="inscription-tab" data-bs-toggle="tab" data-bs-target="#inscription" type="button" role="tab" aria-controls="inscription" aria-selected="true">Inscription</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="demande-tab" data-bs-toggle="tab" data-bs-target="#demande" type="button" role="tab" aria-controls="demande" aria-selected="false">Demande d'autorisation</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="backoffice-tab" data-bs-toggle="tab" data-bs-target="#backoffice" type="button" role="tab" aria-controls="backoffice" aria-selected="false">Back office</button>
+    </li>
+  </ul>
+  <!-- Contenu des onglets -->
+  <div class="tab-content" id="myTabContent">
+    <!-- Onglet Inscription -->
+    <div class="tab-pane fade show active" id="inscription" role="tabpanel" aria-labelledby="inscription-tab">
+      <h2>Inscription</h2>
+      <!-- Formulaire d'inscription -->
+      <form>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Adresse email</label>
+          <input type="email" class="form-control" id="inputEmail" required>
+          <div class="form-text">Votre adresse email doit être liée au domaine de La Plateforme_.</div>
+        </div>
+        <div class="mb-3">
+          <label for="inputPassword" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="inputPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+      </form>
+    </div>
+    <!-- Onglet Demande d'autorisation -->
+    <div class="tab-pane fade" id="demande" role="tabpanel" aria-labelledby="demande-tab">
+      <h2>Demande d'autorisation</h2>
+      <!-- Formulaire de demande d'autorisation -->
+      <form>
+        <!-- Ajouter les champs pour la demande d'autorisation -->
+        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+      </form>
+    </div>
+    <!-- Onglet Back office -->
+    <div class="tab-pane fade" id="backoffice" role="tabpanel" aria-labelledby="backoffice-tab">
+      <h2>Back office</h2>
+      <!-- Liste des demandes d'autorisation à traiter -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Utilisateur</th>
+            <th scope="col">Date demandée</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Exemple de demande à traiter -->
+          <tr>
+            <td>Imrane Bendassi</td>
+            <td>2023-04-10</td>
+            <td>
+              <!-- Boutons d'acceptation/refus -->
+              <button type="button" class="btn btn-success">Accepter</button>
+              <button type="button" class="btn btn-danger">Refuser</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Rémi Godji</td>
+            <td>2023-04-10</td>
+            <td>
+              <!-- Boutons d'acceptation/refus -->
+              <button type="button" class="btn btn-success">Accepter</button>
+              <button type="button" class="btn btn-danger">Refuser</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Lucas Lubin</td>
+            <td>2023-04-10</td>
+            <td>
+              <!-- Boutons d'acceptation/refus -->
+              <button type="button" class="btn btn-success">Accepter</button>
+              <button type="button" class="btn btn-danger">Refuser</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
